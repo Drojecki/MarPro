@@ -1,0 +1,52 @@
+.navbar{
+    max-width: 1440px;
+    display: flex;
+    background-color: white;
+    height: 134px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.outside{
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+}
+.font {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 24px;
+    color: black
+}
+.current{
+    color: #324DD4;
+    position: relative;
+}
+.current::before {
+    content: "";
+    position: absolute;
+    top: -8px; 
+    right: 0; 
+    width: 30px;
+    height: 2px;
+    background-color: #324DD4;
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0; 
+    width: 30px;
+    height: 2px;
+    background-color: #324DD4;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

@@ -1,0 +1,42 @@
+.ContainerMainContent {
+    width: 100%;
+    height: calc(100vh - 214px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.ContainerMainContent img {
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 214px);
+    object-fit: cover;
+}
+.content {
+    top: 100px;
+    position: absolute;
+    text-align: center;
+    color: #242020;
+    font-size: 32px;
+    max-width: 600px;
+}
+
+.contactButton {
+    width: 300px;
+    height: 80px;
+    margin-top: 10px;
+    border-radius: 50px;
+    background-color: #324DD4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.contactButton:hover {
+    background-color: #324DD4;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

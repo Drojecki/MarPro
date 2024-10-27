@@ -1,0 +1,56 @@
+.header{
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    background-color: #242020;
+    height: 80px;
+    color: white;
+}
+.outsideHeader{
+    display: flex;
+    background-color: #242020;
+    width: 100%;
+    justify-content: center;
+}
+.headerInfo{
+    width: 100%;
+    display: flex;
+    font-size: 24px;
+    gap: 100px;
+    margin: auto;
+}
+.contactInfo{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    gap: 100px;
+}
+.Name{
+    min-width: 180px;
+    padding-left: 20px !important;
+    justify-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
+.Name img{
+    margin: auto;
+    width: 48px;
+    height: 48px;
+}
+.flex{
+    display: flex;
+}
+.flex img{
+    width: 48px;
+    height: 48px;
+    margin: auto;
+}
+.gap{
+    gap: 10px;
+}
+.Name a{
+    color: white;
+    display: flex;
+    text-decoration: none;
+    gap: 10px;
+}
