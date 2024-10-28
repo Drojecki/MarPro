@@ -23,6 +23,9 @@
     color: #324DD4;
     position: relative;
 }
+.current p{
+    margin: 0px;
+}
 .current::before {
     content: "";
     position: absolute;
@@ -66,9 +69,10 @@ a:hover{
     }
     .navbar{
         padding: 0 5px;
+        height: 70px;
     }
 }
-@media (max-width: 370px) {
+@media (max-width: 394px) {
     .font{
         font-size: 10px;
     }

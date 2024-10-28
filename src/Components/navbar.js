@@ -1,28 +1,28 @@
 import React from 'react';
-import '../css/navbar.css'
+import { NavLink } from 'react-router-dom';
+import '../css/navbar.css';
+
 function Navbar() {
     return (
-        <>
-            <div className='flex outside'>
-                <div className='navbar font'>
-                    <a href='./'>
-                        <p className='current'>STRONA GŁOWNA</p>
-                    </a>
-                    <a href='./oferta'>
-                        <p>OFERTA</p>
-                    </a>
-                    <a href='./realizacje'>
-                        <p>REALIZACJE</p>
-                    </a>
-                    <a href='./cennik'>
-                        <p>CENNIK</p>
-                    </a>
-                    <a href='./kontakt'>
-                        <p>KONTAKT</p>
-                    </a>
-                </div>
+        <div className='flex outside'>
+            <div className='navbar font'>
+                <NavLink to="/" className={({ isActive }) => isActive ? 'current' : ''}>
+                    <p>STRONA GŁÓWNA</p>
+                </NavLink>
+                <NavLink to="/oferta" className={({ isActive }) => isActive ? 'current' : ''}>
+                    <p>OFERTA</p>
+                </NavLink>
+                <NavLink to="/realizacje" className={({ isActive }) => isActive ? 'current' : ''}>
+                    <p>REALIZACJE</p>
+                </NavLink>
+                <NavLink to="/cennik" className={({ isActive }) => isActive ? 'current' : ''}>
+                    <p>CENNIK</p>
+                </NavLink>
+                <NavLink to="/kontakt" className={({ isActive }) => isActive ? 'current' : ''}>
+                    <p>KONTAKT</p>
+                </NavLink>
             </div>
-        </>
+        </div>
     );
 }
 

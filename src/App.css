@@ -9,8 +9,3 @@
   justify-self: center;
   justify-items: center;
 }
-@media (max-width:1050px) {
-  html{
-    display: flex;
-  }
-}
