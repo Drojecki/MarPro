@@ -22,7 +22,7 @@ function Header() {
                                 <p>example@example.pl</p>
                             </div>
                         </div>
-                        <div className='Name'>
+                        <div className='NameEmpty'>
 
                         </div>
                     </div>

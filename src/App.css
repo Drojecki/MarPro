@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 
 .Container{
-  display: block;
+  display: ruby;
   width: 100%;
   height: 100dvh;
-  background-color: red;
+  max-height: 100dvh;
   justify-content: center;
   justify-self: center;
   justify-items: center;
+}
+@media (max-width:1050px) {
+  html{
+    display: flex;
+  }
 }

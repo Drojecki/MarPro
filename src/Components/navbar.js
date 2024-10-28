@@ -8,16 +8,16 @@ function Navbar() {
                     <a href='./'>
                         <p className='current'>STRONA GŁOWNA</p>
                     </a>
-                    <a href='./'>
+                    <a href='./oferta'>
                         <p>OFERTA</p>
                     </a>
-                    <a href='./'>
+                    <a href='./realizacje'>
                         <p>REALIZACJE</p>
                     </a>
-                    <a href='./'>
+                    <a href='./cennik'>
                         <p>CENNIK</p>
                     </a>
-                    <a href='./'>
+                    <a href='./kontakt'>
                         <p>KONTAKT</p>
                     </a>
                 </div>

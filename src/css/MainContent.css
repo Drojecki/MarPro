@@ -1,6 +1,7 @@
 .ContainerMainContent {
     width: 100%;
-    height: calc(100vh - 214px);
+    height: 100%;
+    max-height: calc(100dvh - 194px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,12 +9,16 @@
     position: relative;
 }
 
-.ContainerMainContent img {
+.backgroundImage {
     width: 100%;
-    height: auto;
-    max-height: calc(100vh - 214px);
-    object-fit: cover;
+    height: calc(100dvh - 194px);
+    max-height: 1000px;
+    background-image: url('../../public/Icons/TEST.webp');
+    background-size: cover;
+    background-position: center;
+    align-self: self-start;
 }
+
 .content {
     top: 100px;
     position: absolute;
@@ -40,3 +45,14 @@
     transform: scale(1.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+button a {
+    color: white;
+}
+
+@media (max-width: 1600px) {
+    .backgroundImage {
+        background-position: top;
+    }
+}
+

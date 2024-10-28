@@ -5,11 +5,11 @@ function MainContent() {
     return (
         <>
             <div className='ContainerMainContent font'>
-                <img src='./icons/TEST.webp' alt='Kuchnia' />
+                <div className='backgroundImage'></div>
                 <div className='content'>
                     <p>MARPRO</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button className='contactButton font'>Skontaktuj się</button>
+                    <button className='contactButton font'><a href='./kontakt'>Skontaktuj się</a></button>
                 </div>
             </div>
         </>

@@ -32,6 +32,13 @@
     display: flex;
     box-sizing: border-box;
 }
+.NameEmpty{
+    min-width: 180px;
+    padding-left: 20px !important;
+    justify-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
 .Name img{
     margin: auto;
     width: 48px;
@@ -53,4 +60,80 @@
     display: flex;
     text-decoration: none;
     gap: 10px;
+}
+@media (max-width: 1200px) {
+    .headerInfo{
+        font-size: 20px;
+    }
+    .Name img{
+        width: 40px;
+        height: 40px;
+    }
+    .flex img{
+        width: 40px;
+        height: 40px;
+    }
+    .NameEmpty{
+        width: 0px;
+        min-width: 0px;
+        padding-left: 0px !important;
+    }
+}
+@media (max-width: 950px) {
+    .headerInfo{
+        gap: 5px;
+    }
+}
+@media (max-width: 750px) {
+    .headerInfo{
+        font-size: 16px;
+    }
+    .Name img{
+        width: 30px;
+        height: 30px;
+    }
+    .flex img{
+        width: 30px;
+        height: 30px;
+    }
+    .contactInfo{
+        gap: 20px;
+    }
+    .Name{
+        min-width: 90px;
+    }
+}
+@media (max-width: 530px) {
+   
+    .contactInfo{
+        gap: 5px;
+    } 
+    .headerInfo{
+        font-size: 13px;
+    }
+    .Name img{
+        width: 20px;
+        height: 20px;
+    }
+    .flex img{
+        width: 20px;
+        height: 20px;
+    }
+}
+@media (max-width: 370px) {
+   
+    .contactInfo{
+        gap: 3px;
+    } 
+    .headerInfo{
+        font-size: 11px;
+    }
+    .Name img{
+        width: 18px;
+        height: 18px;
+    }
+    .flex img{
+        width: 18px;
+        height: 18px;
+    }
 }
