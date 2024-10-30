@@ -8,11 +8,14 @@
     padding: 0 20px;
     box-sizing: border-box;
     align-items: center;
+    
 }
+
 .outside{
     background-color: white;
     width: 100%;
     justify-content: center;
+    border-bottom: 1px solid #242020;
 }
 .font {
     font-family: 'Aldrich', sans-serif;
@@ -22,10 +25,26 @@
 .current{
     color: #324DD4;
     position: relative;
+    transition: color 0.3s ease;
+}
+
+.current::before, .current::after {
+    transition: width 0.3s ease;
+}
+.current::before,
+.current::after {
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.current:hover::before,
+.current:hover::after {
+    width: 45%;
 }
 .current p{
     margin: 0px;
 }
+
 .current::before {
     content: "";
     position: absolute;

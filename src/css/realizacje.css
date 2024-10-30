@@ -1,0 +1,64 @@
+.realizacje-kontener{
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-self: center;
+}
+.realizacje-karta{
+    width: 440px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.realizacje-karta img{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+.realizacje-karta img:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .enlarged-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+  }
+  
+@media (max-width:900px) {
+    .realizacje-karta{
+        width: 220px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .realizacje-karta img{
+        width: 200px;
+    }
+    .realizacje-kontener{
+        max-width: 700px;
+    }
+}
+@media (max-width: 450px) {
+    .realizacje-karta{
+        width: 170px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .realizacje-karta img{
+        width: 150px;
+    }
+    
+}
