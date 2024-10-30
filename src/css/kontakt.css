@@ -1,0 +1,137 @@
+.kontakt-container{
+    max-width: 1200px;
+    justify-content: center;
+    justify-self: center;
+}
+.kontakt-info-container{
+    display: flex;
+    max-width: 1200px;
+}
+
+.kontakt-info{
+    margin: 10px;
+    display: flex;
+    background-color: white;
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    border:  1px solid #242020;
+}
+.kontakt-info p{
+    margin: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: #242020;
+    box-sizing: border-box;
+}
+.kontakt-header{
+    color: #242020;
+}
+.block{
+    display: block;
+}
+.kontakt-info img{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+}
+.kontakt-send-msg{
+    justify-self: center;
+    width: 900px;
+    height: 550px;
+    background-color: lightgrey;
+}
+.kontakt-header{
+    margin-top: 0px;
+    margin-left: 55px;
+    padding-top: 1px !important;
+    box-sizing: border-box;
+    font-size: 32px;
+}
+.kontakt-header p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.placeholder-details{
+    width: 250px;
+    height: 40px;
+    border-radius: 1px;
+    border:  5px solid white;
+    margin: 10px;
+    box-sizing: border-box;
+    font-family: 'Aldrich', sans-serif;
+}
+.kontakt-row-info-client{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.kontakt-row-theme{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.placeholder-theme{
+    width: 790px;
+    height: 40px;
+    border-radius: 1px;
+    border:  5px solid white;
+    margin: 10px;
+    box-sizing: border-box;
+    font-family: 'Aldrich', sans-serif;
+}
+.kontakt-row-message{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.placeholder-msg{
+    width: 790px;
+    height: 200px;
+    border-radius: 1px;
+    border:  5px solid white;
+    margin: 10px;
+    box-sizing: border-box;
+    font-family: 'Aldrich', sans-serif;
+}
+form{
+    margin-top: 10px;
+}
+.kontakt-row-zgody-send{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end !important;
+    margin-right: 55px;
+}
+.kontakt-row-zgody-send button{
+    width: 150px;
+    height: 35px;
+    color: white;
+    background-color: #324DD4;
+    border:  none;
+    border-radius: 5px;
+}
+.kontakt-row-zgody-send button:hover{
+    background-color: #2a40ac;
+    cursor: pointer;
+}
+.checkbox-container{
+    margin-left: 55px;
+    margin-right: 55px;
+}
+.PolitykaPrywatnośći{
+    font-size: 10px;
+    color: #242020;
+}
+.checkox-test{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+}
+.link-polityka{
+    color: #324DD4;
+}

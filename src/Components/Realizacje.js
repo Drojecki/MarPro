@@ -14,7 +14,7 @@ const Realizacje = () => {
   return (
     <div className='realizacje-kontener'>
       <>
-        {['chlopy.png', 'dzieciaki.png', 'Dziwak.jpg', 'idk.jpg', 'ganek.png', 'kuchnia.png', 'ganek.png', 'kuchnia.png', 'ganek.png', 'kuchnia.png'].map((img, index) => (
+        {['chlopy.png', 'dzieciaki.png', 'Dziwak.jpg', 'idk.jpg', 'malpka.jpg', 'nwm.jpg', 'pies.jpg', 'obraz.jpg', 'ganek.png', 'kuchnia.png'].map((img, index) => (
           <div className='realizacje-karta' key={index} onClick={() => handleImageClick(`./photos/${img}`)}>
             <div className='realizacje-zdjęcie'>
               <img src={`./photos/${img}`} alt={img} />

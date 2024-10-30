@@ -67,11 +67,14 @@
 a{
     text-decoration: none;
     color: black;
+    position: relative;
 }
 a:hover{
     transform: scale(1.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #324DD4;
 }
+
 @media (max-width: 1200px) {
     .font{
         font-size: 20px;
