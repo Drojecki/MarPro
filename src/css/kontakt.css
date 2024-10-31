@@ -135,3 +135,54 @@ form{
 .link-polityka{
     color: #324DD4;
 }
+@media (max-width:970px) {
+    .kontakt-info{
+        width: 250px;
+    }
+    .kontakt-info-container{
+        justify-content: center;
+    }
+}
+@media (max-width:915px) {
+    .kontakt-send-msg{
+        width: 95%;
+        height: auto;
+    }
+}
+@media (max-width:800px) {
+    .kontakt-info{
+        width: 95%;
+    }
+    .kontakt-info-container{
+        display: block;
+        justify-items: center;
+    }
+    .kontakt-row-info-client{
+        display: block;
+        text-align: center;
+    }
+    .placeholder-details{
+        width: 95%;
+    }
+    .placeholder-theme{
+        width: 95%;
+    }
+    .placeholder-msg{
+        width: 95%;
+    }
+    .kontakt-row-zgody-send button{
+        margin-bottom: 20px;
+    }
+    .checkbox-container{
+        width: 95%;
+        margin: 0;
+    }
+    .kontakt-row-zgody-send{
+        width: 95%;
+        margin-right: 0px;
+    }
+    .kontakt-header{
+        margin-left: 0px;
+        justify-items: center;
+    }
+}
