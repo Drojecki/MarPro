@@ -8,7 +8,7 @@ function MainContent() {
                 <div className='backgroundImage'></div>
                 <div className='content'>
                     <p>MARPRO</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>TWORZYMY Z PASJI</p>
                     <button className='contactButton font'><a href='./kontakt'>Skontaktuj się</a></button>
                 </div>
             </div>

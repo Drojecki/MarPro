@@ -2,6 +2,7 @@
     max-width: 1200px;
     justify-content: center;
     justify-self: center;
+    margin-bottom: 90px;
 }
 .kontakt-info-container{
     display: flex;
@@ -110,7 +111,7 @@ form{
     width: 150px;
     height: 35px;
     color: white;
-    background-color: #324DD4;
+    background-color: #740707;
     border:  none;
     border-radius: 5px;
 }
@@ -133,7 +134,7 @@ form{
     max-width: 900px;
 }
 .link-polityka{
-    color: #324DD4;
+    color: #740707;
 }
 @media (max-width:970px) {
     .kontakt-info{

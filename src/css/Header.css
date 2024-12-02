@@ -2,13 +2,15 @@
     display: flex;
     max-width: 1440px;
     width: 100%;
-    background-color: #242020;
     height: 80px;
-    color: white;
+    color: black;
 }
 .outsideHeader{
+    position: fixed;
+    bottom: 0;
+    left: 0;
     display: flex;
-    background-color: #242020;
+    background-color: lightgrey;
     width: 100%;
     justify-content: center;
 }
@@ -26,8 +28,8 @@
     gap: 100px;
 }
 .Name{
-    min-width: 180px;
-    padding-left: 20px !important;
+    /* min-width: 180px; */
+    justify-content: center;
     justify-items: center;
     display: flex;
     box-sizing: border-box;
@@ -56,10 +58,13 @@
     gap: 10px;
 }
 .Name a{
-    color: white;
+    color: black;
     display: flex;
     text-decoration: none;
     gap: 10px;
+}
+.Name a:hover{
+    color: black !important;
 }
 @media (max-width: 1200px) {
     .headerInfo{
@@ -98,9 +103,6 @@
     }
     .contactInfo{
         gap: 20px;
-    }
-    .Name{
-        min-width: 90px;
     }
 }
 @media (max-width: 530px) {

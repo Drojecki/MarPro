@@ -6,24 +6,15 @@ function Header() {
             <div className='outsideHeader'>
                 <div className='header'>
                     <div className='headerInfo'>
-                        <div className='Name'>
-                            <a href='./'>
-                                <img src='./icons/Package.png' />
-                                <p>MARPRO</p>
-                            </a>
-                        </div>
                         <div className='contactInfo'>
                             <div className='flex gap'>
-                                <img src='./icons/Phone.png' />
-                                <p>+99 123-456-789</p>
+                                <img src='./icons/Phone.png' alt='phone'/>
+                                <p>+48 691-839-928</p>
                             </div>
                             <div className='flex gap'>
-                                <img src='./icons/Mail.png' />
-                                <p>example@example.pl</p>
+                                <img src='./icons/Mail.png' alt='mail'/>
+                                <p>marpro.kontakt@gmail.com</p>
                             </div>
-                        </div>
-                        <div className='NameEmpty'>
-
                         </div>
                     </div>
                 </div>

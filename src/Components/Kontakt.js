@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
-import "../css/kontakt.css"
+import emailjs from 'emailjs-com'; 
+import "../css/kontakt.css";
+import { useNavigate } from 'react-router-dom';
+
+
 const Kontakt = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -9,7 +14,9 @@ const Kontakt = () => {
     message: '',
     consent: false
   });
-
+   function GoToPolityka(){
+    navigate('/polityka-prywatnosci');
+  }
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData({
@@ -26,24 +33,25 @@ const Kontakt = () => {
       alert("Proszę wypełnić wszystkie pola i zaznaczyć zgodę.");
       return;
     }
-
-    alert(`
-      Imię i Nazwisko: ${name}
-      E-mail: ${email}
-      Telefon: ${phone}
-      Temat: ${subject}
-      Wiadomość: ${message}
-    `);
-
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: '',
-      consent: false
+    emailjs.send(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      formData,
+      process.env.REACT_APP_EMAILJS_USER_ID
+    ).then((response) => {
+      alert('Wiadomość wysłana!');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+        consent: false
+      });
+    }).catch((error) => {
+      console.error('Błąd wysyłania:', error);
+      alert('Nie udało się wysłać wiadomości.');
     });
-
   };
   return (
     <div className='kontakt-container'>
@@ -52,21 +60,21 @@ const Kontakt = () => {
           <img src='photos/Clock.png' alt='clock' />
           <div className='block'>
             <p>Godziny otwarcia:</p>
-            <p>Pon-Pt.: 8:00-20:00</p>
+            <p>Pon-Sob.: 8:00-18:00</p>
           </div>
         </div>
         <div className='kontakt-info'>
           <img src='photos/Phone.png' alt='phone' />
           <div className='block'>
             <p>Tel:</p>
-            <p>+99 123-456-789</p>
+            <p>+48 691-839-928</p>
           </div>
         </div>
         <div className='kontakt-info'>
           <img src='photos/Mail.png' alt='mail' />
           <div className='block'>
             <p>E-mail:</p>
-            <p>example@example.pl</p>
+            <p>marpro.kontakt@gmail.com</p>
           </div>
         </div>
       </div>
@@ -130,7 +138,7 @@ const Kontakt = () => {
                 onChange={handleChange}
                 required
               />
-              <span className='PolitykaPrywatnośći'>Wysyłając Formularz Kontaktowy dobrowolnie wyrażasz zgodę na przetwarzanie swoich danych osobowych w celu dokonywania kontaktu. Masz prawo cofnięcia zgody w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem. Masz prawo dostępu do treści swoich danych i ich sprostowania, usunięcia, ograniczenia przetwarzania, oraz prawo do przenoszenia danych na zasadach zawartych w <a href='/polityka-prywatnosci' className='link-polityka'>polityce prywatności</a>.</span>
+              <span className='PolitykaPrywatnośći'>Wysyłając Formularz Kontaktowy dobrowolnie wyrażasz zgodę na przetwarzanie swoich danych osobowych w celu dokonywania kontaktu. Masz prawo cofnięcia zgody w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem. Masz prawo dostępu do treści swoich danych i ich sprostowania, usunięcia, ograniczenia przetwarzania, oraz prawo do przenoszenia danych na zasadach zawartych w <a onClick={GoToPolityka} className='link-polityka'>polityce prywatności</a>.</span>
             </label>
           </div>
           <div className='kontakt-row-zgody-send'>

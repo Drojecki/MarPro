@@ -14,10 +14,10 @@ const Realizacje = () => {
   return (
     <div className='realizacje-kontener'>
       <>
-        {['chlopy.png', 'dzieciaki.png', 'Dziwak.jpg', 'idk.jpg', 'malpka.jpg', 'nwm.jpg', 'pies.jpg', 'obraz.jpg', 'ganek.png', 'kuchnia.png'].map((img, index) => (
-          <div className='realizacje-karta' key={index} onClick={() => handleImageClick(`./photos/${img}`)}>
+        {['Kuchnia1.jpeg','Schody1.jpg','Schody2.jpg','Schody3.jpeg','Schody4.jpeg','Schody5.jpeg',].map((img, index) => (
+          <div className='realizacje-karta' key={index} onClick={() => handleImageClick(`./MarPro/${img}`)}>
             <div className='realizacje-zdjęcie'>
-              <img src={`./photos/${img}`} alt={img} />
+              <img src={`./MarPro/${img}`} alt={img} />
             </div>
           </div>
         ))}

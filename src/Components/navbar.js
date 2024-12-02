@@ -6,6 +6,12 @@ function Navbar() {
     return (
         <div className='flex outside'>
             <div className='navbar font'>
+                <div className='Name'>
+                    <a href='./'>
+                        {/* <img src='./icons/Package.png' /> */}
+                        <p><span className="mar">MAR</span><span className="pro">PRO</span></p>
+                        </a>
+                </div>
                 <NavLink to="/" className={({ isActive }) => isActive ? 'current' : ''}>
                     <p>STRONA GŁÓWNA</p>
                 </NavLink>
@@ -14,9 +20,6 @@ function Navbar() {
                 </NavLink>
                 <NavLink to="/realizacje" className={({ isActive }) => isActive ? 'current' : ''}>
                     <p>REALIZACJE</p>
-                </NavLink>
-                <NavLink to="/cennik" className={({ isActive }) => isActive ? 'current' : ''}>
-                    <p>CENNIK</p>
                 </NavLink>
                 <NavLink to="/kontakt" className={({ isActive }) => isActive ? 'current' : ''}>
                     <p>KONTAKT</p>

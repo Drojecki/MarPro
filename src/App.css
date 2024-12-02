@@ -9,3 +9,17 @@
   justify-self: center;
   justify-items: center;
 }
+.polityka{
+  width: 95%;
+  max-width: 1000px;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+.mar {
+  color: rgb(12, 12, 187); 
+}
+
+.pro {
+  color: #740707; 
+}
